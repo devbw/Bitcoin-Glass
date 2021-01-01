@@ -7,6 +7,7 @@ body{
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
@@ -21,7 +22,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 3rem;
-    height: 300px;
+    margin-top: 6%;
     border-radius: 15px;
     border-left: 1px solid rgba(255, 255, 255, .3);
     border-top: 1px solid rgba(255, 255, 255, .3);
@@ -30,6 +31,14 @@ body{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);
+}
+.glass-title{
+    height : 10px;
+    text-transform: uppercase;
+}
+.glass-bitcoin{
+    height: 150px;
+    
 }
 
 span{
