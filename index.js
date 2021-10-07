@@ -7,11 +7,11 @@ const printBitcoin = async function () {
     .then(res => {
         if(res.ok){
             res.json().then(data => {
-                bitcoin.textContent = data.EUR.last + ' €';
-                bitcoinUSD.textContent = data.USD.last + ' $';
+                bitcoin.textContent = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(data.EUR.last);
+                bitcoinUSD.textContent = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'EUR' }).format(data.USD.last);
             })
         } else {
-            console.log('ERREUR');
+            console.log('ERREUR : Aucune réponse du serveur');
         }
     })
 }
