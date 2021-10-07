@@ -17,3 +17,18 @@ const printBitcoin = async function () {
 }
 
 setInterval(printBitcoin, 3000);
+
+document.querySelector('.bdev a').addEventListener('mouseover', () => {
+    const chevronGauche = document.querySelector('.chevron_gauche');
+    const chevronDroite = document.querySelector('.chevron_droite');
+
+    chevronGauche.style.marginRight = '5px';
+    chevronDroite.style.marginLeft = '5px';
+})
+document.querySelector('.bdev a').addEventListener('mouseout', () => {
+    const chevronGauche = document.querySelector('.chevron_gauche');
+    const chevronDroite = document.querySelector('.chevron_droite');
+
+    chevronGauche.style.marginRight = '0px';
+    chevronDroite.style.marginLeft = '0px';
+})
