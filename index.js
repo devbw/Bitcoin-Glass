@@ -16,6 +16,7 @@ const printBitcoin = async function () {
     })
 }
 
+printBitcoin();
 setInterval(printBitcoin, 3000);
 
 document.querySelector('.bdev a').addEventListener('mouseover', () => {
